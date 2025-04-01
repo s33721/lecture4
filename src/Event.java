@@ -26,6 +26,10 @@ public class Event {
         this.location = location;
     }
 
+    public String toString(){
+        return name+" "+price;
+    }
+
     public boolean reserveSeat() {
         if (availableSeats <= 0) {
             System.out.println("There are no seats available");
