@@ -15,12 +15,12 @@ public class ReservationSystem {
         return true;
     }
 
-    public boolean addClient(Client c) {
+    public boolean addCustomer(Client c) {
         clientList.add(c);
         return true;
     }
 
-    public boolean addClient(String firstName, String lastName) {
+    public boolean addCustomer(String firstName, String lastName) {
         Client c = new Client(firstName, lastName);
         clientList.add(c);
         return true;
