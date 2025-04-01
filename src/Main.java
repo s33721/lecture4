@@ -37,7 +37,7 @@ public class Main {
         customer1.displayReservations();
         // Check the number of available seats for the concert (should be 2 less than max)
         System.out.println("\nAvailable seats for the concert: " + concert.getAvailableSeats() +
-                " out of " + concert.getMaxNumberOfSeats())
+                " out of " + concert.getMaxNumberOfSeats());
 
     }
 }

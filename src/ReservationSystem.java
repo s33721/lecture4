@@ -2,7 +2,7 @@ import java.util.ArrayList;
 
 public class ReservationSystem {
     private ArrayList<Event> eventList = new ArrayList<>();
-    private ArrayList<Client> clientList = new ArrayList<>();
+    private ArrayList<Customer> clientList = new ArrayList<>();
 
     public boolean addEvent(Event e) {
         eventList.add(e);
@@ -15,13 +15,13 @@ public class ReservationSystem {
         return true;
     }
 
-    public boolean addCustomer(Client c) {
+    public boolean addCustomer(Customer c) {
         clientList.add(c);
         return true;
     }
 
     public boolean addCustomer(String firstName, String lastName) {
-        Client c = new Client(firstName, lastName);
+        Customer c = new Customer(firstName, lastName);
         clientList.add(c);
         return true;
     }
@@ -35,11 +35,11 @@ public class ReservationSystem {
         return null;
     }
 
-    public void makeReservation(Event event, Client client) {
+    public void makeReservation(Customer customer, Event event) {
         eventList.add(event);
-        clientList.add(client);
+        clientList.add(customer);
         event.reserveSeat();
-        client.addReservation(event);
+        customer.addReservation(event);
     }
 
     public void changeEventPrice(String eventName, double price) {
@@ -50,9 +50,9 @@ public class ReservationSystem {
         e.setPrice(price);
     }
 
-    public Client findClient(String lastName) {
-        for (Client c : clientList) {
-            if (c.getLastname().equals(lastName)) {
+    public Customer findClient(String lastName) {
+        for (Customer c : clientList) {
+            if (c.getLastName().equals(lastName)) {
                 return c;
             }
         }
