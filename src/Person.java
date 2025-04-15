@@ -1,6 +1,10 @@
 public class Person {
-    public String firstName;
-    public String lastName;
+    private String firstName;
+    private String lastName;
+    public Person(String firstName, String lastName) {
+        this.firstName = firstName;
+        this.lastName = lastName;
+    }
     public void displayInfo(){
         System.out.println("First name: " + firstName);
         System.out.println("Last name: " + lastName);

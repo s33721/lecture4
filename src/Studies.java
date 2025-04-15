@@ -6,5 +6,4 @@ public class Studies {
 
     public ArrayList<Student> students;
     public ArrayList<Teacher> teachers;
-    public ArrayList<Employee> employees;
 }
