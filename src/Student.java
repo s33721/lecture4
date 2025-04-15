@@ -1,18 +1,16 @@
 public class Student extends Person {
-    private int indexNumber;
+    private String studentIndex;
     private String studentEmail;
-
-    public Student(String firstName, String lastName, int indexNumber, String studentEmail) {
+    public Student(String firstName, String lastName, String studentIndex, String studentEmail) {
         super(firstName, lastName);
-        this.indexNumber = indexNumber;
+        this.studentIndex = studentIndex;
         this.studentEmail = studentEmail;
     }
     @Override
-    public void displayInfo(){
+    public void displayInfo() {
         System.out.println("First Name: " + firstName);
-        System.out.println("Last Name : " + lastName);
-        System.out.println("Index Number: " + indexNumber);
-        System.out.println("Student Email: " + studentEmail);
+        System.out.println("Last Name: " + lastName);
+        System.out.println("Index Number: " + studentIndex);
+        System.out.println("Position: " + studentIndex);
     }
-
 }

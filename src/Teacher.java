@@ -11,9 +11,9 @@ public class Teacher extends Person {
     @Override
     public void displayInfo() {
         System.out.println("First Name: " + firstName);
-        System.out.println("Last Name : " + lastName);
-        System.out.println("Salary : " + salary);
-        System.out.println("Position : " + position);
+        System.out.println("Last Name: " + lastName);
+        System.out.println("Salary: " + salary);
+        System.out.println("Position: " + position);
     }
 
 }

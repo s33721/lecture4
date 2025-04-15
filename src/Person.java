@@ -9,4 +9,7 @@ public class Person {
         System.out.println("First name: " + firstName);
         System.out.println("Last name: " + lastName);
     }
+    public void calculateSalary(){
+
+    }
 }
